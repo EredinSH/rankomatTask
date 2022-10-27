@@ -19,7 +19,7 @@ public class ClientMapper {
         return new ClientDto(client.getId(), client.getName(), client.getPhoneNumber(), client.getAmount());
     }
 
-    public List<ClientDto> mapToTaskDtoList(final List<Client> clientList) {
+    public List<ClientDto> mapToClientDtoList(final List<Client> clientList) {
         return clientList.stream()
                 .map(this::mapToClientDto)
                 .collect(Collectors.toList());

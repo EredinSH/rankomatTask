@@ -2,6 +2,7 @@ package com.rankomat.task.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Timestamp;
@@ -10,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class ClientDto {
 
     public ClientDto(Long id, String name,int phoneNumber, double amount) {

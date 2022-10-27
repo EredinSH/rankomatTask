@@ -56,7 +56,7 @@ public class DbService {
 
     }
 
-    public List<Client> generateReport(String scope) {
+    public List<Client> generateReport(String scope) { //not exactly like order, problem with creating code
 
         List<Client> list = repository.findAll();
         List<Client> updatedList = repository.findByUpdated(true);

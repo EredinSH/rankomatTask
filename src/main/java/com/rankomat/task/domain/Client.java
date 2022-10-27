@@ -25,12 +25,6 @@ public class Client {
         this.amount = amount;
     }
 
-    public Client(String name,int phoneNumber, double amount) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.amount = amount;
-    }
-
     @Id
     @GeneratedValue
     private Long id;

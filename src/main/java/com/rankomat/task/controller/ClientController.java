@@ -11,8 +11,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -46,7 +44,7 @@ public class ClientController {
     @GetMapping
     public ResponseEntity<List<ClientDto>> getReport(String scope) {
         List<Client> reportList = service.generateReport(scope);
-        return ResponseEntity.ok(mapper.mapToTaskDtoList(reportList));
+        return ResponseEntity.ok(mapper.mapToClientDtoList(reportList));
     }
 
 }
